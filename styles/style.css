@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root{
+    --bg-color: #b566ff;
+    --card-bg-color: #770371;
+    --intern-bg-color: #8b0385;
+    --text-color: #f0ecf5;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-size: 15px;
+    font-family: Lato, sans-serif;
+    color: var(--text-color);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: var(--card-bg-color);
+    box-shadow: 0 5px 5px #2e2a2a;
+    padding: 30px; 
+    border-radius: 10px;
+}
+
+.intern-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--intern-bg-color);
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+.title{
+    padding: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+input, select{
+    background-color: var(--text-color);
+    padding: 5px 5px 8px 8px;
+
+    border: none;
+    border-radius: 5px;
+}
+input{
+    width: 80px;
+}
+
+select{
+    font-size: 12px;
+    width: 180px;
+}
+
+input:focus, select:focus{
+    border: 3px solid var(--card-bg-color);
+    outline: none;
+}
+
+input[type=submit]{
+    width: 100%;
+    display: block;
+    margin: 30px auto;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--text-color);
+
+    background-color: var(--card-bg-color);
+    border-radius: 20px;
+    border: none;
+    box-shadow: 3px 5px 3px #2e2a2a ;
+}
+
+
