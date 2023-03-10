@@ -17,19 +17,19 @@
             <div class="intern-card">
                 <h1 class="title">Calculadora de Gorjetas</h1>
                 <div>
-                    <form action="">
+                    <form action="" id="forms">
                         <label for="bill">
                             <p>Qual o valor da conta?</p>
                         </label>
                         <span>
-                            R$ <input type="number" placeholder="100,00" name="bill" id="bill">
+                            R$ <input type="number" placeholder="100,00" name="bill" id="bill" required>
                         </span>
 
                         <label for="serviceQuality">
                             <p>Como foi o seu serviço?</p>
                         </label>
                         <select name="serviceQuality" id="serviceQuality">
-                            <option disabled selected>Selecione uma opção</option>
+                            <option value="0" disabled selected>Selecione uma opção</option>
                             <option value="0.30">Excelente</option>
                             <option value="0.25">Bom</option>
                             <option value="0.15">Médio</option>
@@ -40,16 +40,23 @@
                             <p>Quantas pessoas vão dividir a conta?</p>
                         </label>
                         <span>
-                            <input type="number" placeholder="0 pessoas" name="people" id="people">
+                            <input type="number" placeholder="0 pessoas" name="people" id="people" required>
                         </span>
                         <br><br>
                         <input type="submit" value="Calcular">
 
                     </form>
                 </div>
+                <div id="total-tip">
+                    Total da gorjeta: R$
+                    <span id="tip">0,00</span>
+                    <p id="each">cada</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
 
 </body>
 
